@@ -1,0 +1,330 @@
+mkdir ~/.config/zsh/plugins
+cd ~
+ls icons
+ls .icons
+lt .icons
+lla .icons
+lt .icons/default
+lla .icons/default
+mkdir ~/.config/fastfetch
+cat .bashrc
+sudo pacman -S rofi
+mkdir ~/.config/rofi
+v ~/.config/rofi/config.rasi
+v ~/.config/rofi/clipboard.rasi
+rofi
+rofi --show
+rofi --show drun
+rofi -show drun
+cd co
+cd conf
+cd .config
+git clone https://github.com/haikal-hakim/athena
+v ~/.config/fastfetch/config.jsonc
+c
+lsbl
+sleep
+hibern
+lls
+ll
+sudo pacman -S GRUB
+sudo pacman -S grub
+v /etc/default/grub
+cat /etc/default/grub | wl-copy
+grep GRUB_THEME /boot/grub/grub.cfg
+grep -i theme /boot/grub/grub.cfg
+la /boot/grub/grub.cfg
+sudo mkdir -p /boot/grub/themes/tokyo-night
+lt
+rm -rf starfield
+sudo rm -rf starfield
+sudo grub-editenv list
+cp ~/Pictures/wallpapers/tokyo-night-2.jpg tokyo-night
+sudo cp ~/Pictures/wallpapers/tokyo-night-2.jpg tokyo-night
+sudo nvim theme.txt
+ls
+cd ..
+cd
+git clone https://github.com/mino29/tokyo-night-grub.git
+cd tokyo-night-grub
+lla
+cp -r tokyo-night /boot/grub/themes
+sudp cp -r tokyo-night /boot/grub/themes
+sudo cp -r tokyo-night /boot/grub/themes
+cd /boot/grub
+cd themes
+cd tokyo-night
+la
+reboot
+lla /boot/grub/themes/
+lla /boot/grub/themes
+grep '^GRUB_THEME' /etc/default/grub
+ls -la /boot/grub/themes/
+ls -la /boot/grub/themes/Ѓ�Ѓ�Я_Ѓ�Ѓ�Ѓ�Ы/
+ls -la /boot/grub/themes/tokyo-night
+sudo grub-mkconfig -o /tmp/grub.cfg
+ls -la /boot
+sudo mount /dev/nvme0n1p1 /boot
+lla /boot
+ls -la /boot/grub
+lsblk
+cat /etc/fstab
+lsblk -f
+sudo nvim /etc/fstab
+sudo mount -a
+findmnt /
+swapon --show
+find /boot/grub/themes -maxdepth 3 -type f -printf '%p\n'
+cat /etc/default/grub
+grep -n "tokyo-night\|theme.txt" /boot/grub/grub.cfg
+sed -n '1,240p' /boot/grub/themes/tokyo-night/theme.txt
+grep -v '^#' /etc/fstab
+ls /boot
+sudo ls /boot
+sudo efibootmgr -o 0001,0000,0002,0003,0004,0005
+find /boot/EFI -maxdepth 3 -type f -print
+sudo ls -lh /boot/EFI/GRUB/grubx64.efi
+sudo ls -lh /boot/grub/grub.cfg
+sudo find /boot/EFI -maxdepth 3 -type f -print
+pacman -Q grub efibootmgr
+sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
+sudo efibootmgr -o 0001,0000,0002
+
+ls -la /boot/EFI
+sudo ls -la /boot/EFI
+sudo ls -la /boot/EFI/GRUB
+findmnt /boot
+/boot/EFI/GRUB/grubx64.efi
+sudo efibootmgr -b 0000 -B\
+sudo efibootmgr -b 0001 -B
+sudo efibootmgr --create --disk /dev/nvme0n1 --part 1 --label "GRUB" --loader '\EFI\GRUB\grubx64.efi'
+sudo efibootmgr -v
+sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB --removable
+sudo ls -l /boot/EFI/BOOT/
+sudo efibootmgr
+grep -nE 'set timeout|timeout_style|set theme|linux ' /boot/grub/grub.cfg
+sudo grep -nE 'set timeout|timeout_style|set theme|linux ' /boot/grub/grub.cfg
+sudo grep -n 'GRUB_TIMEOUT' /etc/default/grub
+sudo nvim /etc/default/grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo grub-script-check /boot/grub/grub.cfg
+sudo grep -nE 'set timeout|timeout_style|set theme' /boot/grub/grub.cfg
+sudo reboot
+la .config
+cl
+v .config/zsh/starship/starship.toml
+v .config/fastfetch
+fastfetch
+ff
+v ~/.config/zsh/.zshrc
+source ~/.config/zsh/.zshrc
+pc -S wev
+wev
+v ~/.config/hypr/hyprland.
+v ~/.config/hypr/hyprland.conf
+pkill waybar
+[A
+waybar
+v ~/.config/waybar
+nvim ~/.config/alacritty/alacritty.toml
+exit
+: 1786617691:0;;5A
+: 1786617695:0;waybar
+: 1786620054:0;v ~/.config/waybar
+: 1786620131:0;waybar
+: 1786620564:0;[A
+: 1786620567:0;waybar
+: 1786621536:0;waybar.
+: 1786621538:0;waybar
+: 1786621935:0;waybar.
+: 1786621936:0;waybar
+: 1786622841:0;git clone https://github.com/haikal-hakim/athena/blob/main/.config/waybar/tokens/slider.css
+: 1786622851:0;git clone https://github.com/haikal-hakim/athena
+: 1786622855:0;cd athena
+: 1786622858:0;lt
+: 1786622864:0;lla
+: 1786622871:0;cd .config
+: 1786622873:0;cd waybar
+: 1786622875:0;lt
+: 1786622892:0;cd ..
+: 1786622898:0;7z a waybar
+: 1786623141:0;cd athena
+: 1786623146:0;cd .config
+: 1786623150:0;cd waybar
+: 1786623152:0;cd .
+: 1786623153:0;cd ..
+: 1786623161:0;7z x --zip waybar
+: 1786623169:0;7z --help
+: 1786623210:0;7z a zip waybar
+: 1786623225:0;ls
+: 1786623273:0;7z a waybar.zip waybar
+: 1786623292:0;ls
+: 1786623404:0;7z a -tzip archive.zip folder_name/
+: 1786623413:0;7z a -tzip archive.zip waybar
+: 1786623702:0;cd .config/
+: 1786623705:0;rm -rf waybar
+: 1786623721:0;cp -r ~/athena/.config/waybar .
+: 1786623724:0;waybar
+: 1786623944:0;cd waybar
+: 1786623945:0;lt
+: 1786623957:0;cat config.jsonc
+: 1786623967:0;cat /modules/*
+: 1786623985:0;ls modules/*
+: 1786623998:0;cat modules/*
+: 1786624000:0;cl
+: 1786624009:0;lt
+: 1786624029:0;rm README.md
+: 1786624030:0;lla
+: 1786624034:0;cl
+: 1786624036:0;lt
+: 1786624062:0;cat config.jsonc modules/* style.css tokens/*
+: 1786624159:0;cd ..
+: 1786624163:0;rm -rf waybar
+: 1786624173:0;mkdir wabar
+: 1786624177:0;rm -rf wabar
+: 1786624187:0;mkdir waybar
+: 1786624188:0;cd waybar
+: 1786624191:0;v
+: 1786624233:0;waybar
+: 1786626698:0;v
+: 1786626702:0;waybar
+: 1786627610:0;v ~/.config/alacritty
+: 1786627798:0;for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
+: 1786627921:0;waybar
+: 1786628704:0;chmod +x ~/.config/waybar/nvidia_stats.sh
+: 1786628711:0;chmod +x ~/.config/waybar/gpu.sh
+: 1786628715:0;v
+: 1786628913:0;mkdir gpu
+: 1786628916:0;v
+: 1786628939:0;v gpu
+: 1786629021:0;chmod +x ~/.config/waybar/usage.sh ~/.config/waybar/temp.sh ~/.config/waybar/vram.sh
+: 1786629041:0;chmod +x ~/.config/waybar/gpu/use.sh ~/.config/waybar/gpu/temp.sh ~/.config/waybar/gpu/vram.sh
+: 1786629047:0;v
+: 1786629110:0;waybar
+: 1786629396:0;cd ~/.config/waybar
+: 1786629398:0;lt
+: 1786629542:0;waybar
+: 1786629564:0;cl
+: 1786629568:0;lt
+: 1786629587:0;cat gpu/temp
+: 1786629591:0;cl
+: 1786629592:0;lt
+: 1786629599:0;cat config.jsonc
+: 1786629604:0;cat style.css
+: 1786629612:0;cat gpu/use.sh
+: 1786629618:0;cat gpu/temp.sh
+: 1786629625:0;cat gpu/vram.sh
+: 1786629734:0;м
+: 1786629735:0;v
+: 1786629833:0;~/.config/waybar/gpu/use.sh\
+~/.config/waybar/gpu/temp.sh\
+~/.config/waybar/gpu/vram.sh
+: 1786629850:0;waybar
+: 1786630460:0;cat style.css
+: 1786630464:0;cat config.jsonc
+: 1786630639:0;м
+: 1786630640:0;v
+: 1786630765:0;waybar
+: 1786631503:0;lt
+: 1786631507:0;cat config.jsonc
+: 1786631511:0;cat style.css
+: 1786631518:0;cat gpu/vram.sh
+: 1786631523:0;cat gpu/use.sh
+: 1786631532:0;cat gpu/temp.sh
+: 1786631538:0;cat gpu/vram.sh
+: 1786631655:0;v
+: 1786632697:0;chmod +x ~/.config/waybar/gpu/*.sh\
+chmod +x ~/.config/waybar/power/*.sh
+: 1786632705:0;waybar
+: 1786632803:0;stress-ng --cpu 0 --timeout 60s
+: 1786632815:0;sudo pacman -S stress-ng
+: 1786632821:0;stress-ng --cpu 0 --timeout 60s
+: 1786633125:0;v
+: 1786633280:0;ls /sys/class/powercap/
+: 1786633283:0;cat /sys/class/powercap/intel-rapl:0/energy_uj
+: 1786633284:0;sudo chmod 644 /sys/class/powercap/intel-rapl:0/energy_uj
+: 1786633295:0;waybar
+: 1786633319:0;stress-ng --cpu 0 --timeout 60s
+: 1786633399:0;sudo pacman -S cuda-samples
+: 1786633403:0;sudo pacman -S gpu-burn
+: 1786633421:0;paru gpu-burn
+: 1786633459:0;gpu_burn 60
+: 1786633587:0;ff
+: 1786633727:0;v
+: 1786633736:0;waybar
+: 1786633762:0;swapon --show
+: 1786633774:0;v
+: 1786633795:0;waybar
+: 1786633818:0;v
+: 1786634942:0;waybar
+: 1786635078:0;cl
+: 1786635081:0;lt
+: 1786635087:0;cat *
+: 1786635100:0;cl
+: 1786635112:0;lt
+: 1786635150:0;сд
+: 1786635151:0;cl
+: 1786635153:0;lt
+: 1786635155:0;cat config.jsonc
+: 1786635156:0;cat gpu/temp.sh
+: 1786635158:0;cat gpu/use.sh
+: 1786635160:0;cat gpu/vram.sh
+: 1786635161:0;cat power/cpu_power.sh
+: 1786635162:0;cat power/gpu_power.sh
+: 1786635164:0;cat style.css
+: 1786635427:0;м
+: 1786635428:0;v
+: 1786635479:0;chmod +x ~/.config/waybar/player.sh
+: 1786635485:0;v config.jsonc
+: 1786635726:0;waybar
+: 1786636561:0;chmod +x ~/.config/waybar/lan.sh
+: 1786636575:0;waybar
+: 1786637041:0;playerctl -p yandex-music metadata
+: 1786637052:0;playerctl -p chromium.instance1489 metadata
+: 1786637103:0;waybar
+: 1786637290:0;.
+: 1786637292:0;waybar
+: 1786637681:0;cd ~/.config/waybar
+: 1786637684:0;v config.jsonc
+: 1786637801:0;waybar
+: 1786637876:0;hyprctl clients | grep -i "yandex" -B 2 -A 5
+: 1786637907:0;waybar
+: 1786638057:0;v ~/.config/al
+: 1786638064:0;v ~/.config/alacritty/alacritty.toml
+: 1786638084:0;v
+: 1786638132:0;.
+: 1786638134:0;v
+: 1786638140:0;waybar
+: 1786638303:0;v
+: 1786638348:0;waybar.
+: 1786638349:0;waybar
+: 1786638431:0;cat ~/.config/waybar/style.css
+: 1786638506:0;waybar
+: 1786644171:0;pacman -Qe
+: 1786644178:0;pacman -Qe | wl-copy
+: 1786644860:0;ls
+: 1786644902:0;git init
+: 1786644936:0;cat ~/.ssh/id_ed25519.pub
+: 1786645761:0;mkdir LICENSES
+: 1786645767:0;v LICENSES
+: 1786645976:0;v README.md
+: 1786646010:0;ls LICENSES
+: 1786646143:0;git remote add origin git@github.com:maxxxik685/maxi-desktop
+: 1786646170:0;lla
+: 1786646256:0;cd Pictures
+: 1786646259:0;ls
+: 1786646263:0;cd wallpapers
+: 1786646266:0;ls
+: 1786646344:0;git add .zshenv README.md LICENSES/ Pictures/wallpapers/tokyo-night-2.jpg Skripts/
+: 1786646350:0;cd .config
+: 1786646354:0;cd .co
+: 1786646358:0;cd .config
+: 1786646360:0;lla
+: 1786646366:0;cd
+: 1786646369:0;cd .config
+: 1786646371:0;lla
+: 1786646463:0;lla procps
+: 1786646494:0;git add alacritty/ fastfetch/ gtk-3.0/ gtk-4.0/ nvim/ waybar/ zsh/
+: 1786646555:0;rm -rf .config/zsh/plugins/fast-syntax-highlighting/.git\
+rm -rf .config/zsh/plugins/zsh-autosuggestions/.git
+: 1786646560:0;git add alacritty/ fastfetch/ gtk-3.0/ gtk-4.0/ nvim/ waybar/ zsh/

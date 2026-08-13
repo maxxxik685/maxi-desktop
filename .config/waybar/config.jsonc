@@ -1,0 +1,191 @@
+{
+  "layer": "top",
+  "height": 38,
+  "spacing": 6,
+  "modules-left": [
+    "group/distro-group",
+    "group/storage",
+    "group/cpu-temp",
+    "group/gpu"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "custom/yandex",
+    "group/audio",
+    "group/connections",
+    "clock"
+  ],
+  "custom/gpu-usage": {
+    "exec": "~/.config/waybar/gpu/use.sh",
+    "return-type": "json",
+    "interval": 1,
+    "format": "󰢮",
+    "format-alt": "󰢮 {alt}",
+    "on-click": "true",
+    "tooltip": false
+  },
+  "custom/gpu-temp": {
+    "exec": "~/.config/waybar/gpu/temp.sh",
+    "return-type": "json",
+    "interval": 1,
+    "format": "{icon}",
+    "format-alt": "{icon} {alt}",
+    "format-icons": ["", "", ""],
+    "tooltip": false
+  },
+  "custom/gpu-vram": {
+    "exec": "~/.config/waybar/gpu/vram.sh",
+    "return-type": "json",
+    "interval": 1,
+    "format": "󰘚",
+    "format-alt": "󰘚 {alt}",
+    "tooltip": false
+  },
+  "group/gpu": {
+    "orientation": "horizontal",
+    "modules": [
+      "custom/gpu-usage",
+      "custom/gpu-temp"
+    ]
+  },
+  
+  "group/storage": {
+    "orientation": "horizontal",
+    "modules": ["disk", "memory", "custom/gpu-vram", "swap"]
+  },
+  "group/cpu-temp": {
+    "orientation": "horizontal",
+    "modules": ["temperature", "cpu"]
+  },
+  
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "󰋋",
+      "headset": "󰋋",
+      "hands-free": "󰋋",
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": "",
+    "tooltip": false
+  },
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+  },
+  "clock": {
+    "timezone": "Asia/Jakarta",
+    "format": "󰃱 <span size='11pt'>{:%d %B %Y}</span>",
+    "format-alt": "󰃱 <span size='11pt'>{:%H.%M }</span>",
+    "tooltip": false
+  },
+  "network": {
+  "format-ethernet": "",
+  "format-disconnected": "󱘖",
+},
+"custom/yandex": {
+  "exec": "playerctl metadata --format '{{title}}'",
+  "interval": 1,
+  "format": "{}",
+  "on-click": "playerctl play-pause",
+  "tooltip": false
+},
+  "bluetooth": {
+    "format": "󰂯",
+    "format-connected": "󰂱",
+    "format-disabled": "󰂲",
+    "tooltip": false,
+    "on-click": "blueman-manager",
+    "on-click-right": "rfkill toggle bluetooth"
+  },
+  "custom/distro": { "format": "", "tooltip": false },
+  "custom/terminal": { "format": "", "on-click": "alacritty", "tooltip": false },
+  "custom/browser": { "format": "", "on-click": "firefox", "tooltip": false },
+  "custom/steam": { "format": "", "on-click": "steam", "tooltip": false },
+  "custom/player": { "format": "", "on-click": "yandex-music", "tooltip": false },
+  "custom/torrent": { "format": "", "on-click": "qbittorrent", "tooltip": false },
+  "custom/telegram": { "format": "", "on-click": "Telegram", "tooltip": false },
+  "group/distro-group": {
+    "orientation": "horizontal",
+    "drawer": { "transition-duration": 650, "transition-left-to-right": true },
+    "modules": ["custom/distro", "custom/terminal", "custom/browser", "custom/steam", "custom/player", "custom/torrent", "custom/telegram"]
+  },
+  "group/audio": {
+    "orientation": "horizontal",
+    "drawer": { "transition-duration": 650, "transition-left-to-right": false },
+    "modules": ["pulseaudio", "pulseaudio/slider", "pulseaudio#microphone"]
+  },
+  "group/connections": {
+    "orientation": "horizontal",
+    "drawer": { "transition-duration": 500, "transition-left-to-right": false },
+    "modules": ["network", "bluetooth"]
+  },
+  "disk": { 
+    "tooltip": false, 
+    "interval": 1, 
+    "path": "/", 
+    "format": "󱙋",
+    "format-alt": "󱙋 <span size='11pt'>{used}</span>",
+    "states": { "warning": 80, "critical": 90 } 
+  },
+  "memory": { 
+    "tooltip": false, 
+    "interval": 1, 
+    "format": "󰍛",
+    "format-alt": "󰍛 <span size='11pt'>{used}</span>",
+    "states": { "warning": 75, "critical": 85 } 
+  },
+  "swap": {
+    "tooltip": false,
+    "interval": 1,
+    "format": "󰓡",
+    "format-alt": "󰓡 <span size='11pt'>{used}</span>",
+    "states": { "warning": 75, "critical": 85 }
+  },
+  "cpu": { 
+    "tooltip": false, 
+    "interval": 1, 
+    "format": "󰻠",
+    "format-alt": "󰻠 <span size='11pt'>{usage}%</span>",
+    "states": { "warning": 75, "critical": 90 } 
+  },
+  "temperature": { 
+    "tooltip": false, 
+    "interval": 1, 
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
+    "min-threshold": 30, 
+    "max-threshold": 90, 
+    "critical-threshold": 90, 
+    "format": "{icon}",
+    "format-alt": "{icon} <span size='11pt'>{temperatureC}°C</span>",
+    "format-critical": "<span size='12pt'>󱗗 </span><span size='11pt'>{temperatureC}°C</span>",
+    "states": {"warning": 82, "critical": 90},
+    "format-icons": ["", "", ""] 
+  },
+  "hyprland/workspaces": {
+    "format": "{icon} {windows}",
+    "on-click": "activate",
+    "persistent-workspaces": { "*": 5 },
+    "window-rewrite-default": "󰊠",
+    "window-rewrite": {
+      "alacritty": "󰆍", "steam": "", "YandexMusic": "",  "telegram": "", "onlyoffice": "󰏆", "firefox": "", "code": "󰨞", "azahar": "", "obsidian": "󰹕", "mousepad": "󱓧",
+      "discord": "", "spotify": "", "org.kde.kdeconnect.app": "󰦉", "org.qbittorrent.qBittorrent": "",
+      "xdg-desktop-portal-gtk": "", "thunar": "", "yazi": "󰇥", "imv": "󰄄", "swappy": "󰄄", "org.gnome.FileRoller": "", "vlc": "󰕼", "mpv": "󰕼",
+      "blueman-manager": "", "pavucontrol": "󱕂", "nm-connection-editor": "󰐻",
+      "nwg-look": "󰒓", "qt5ct": "󰒓", "qt6ct": "󰒓", "designer": "󰒓", "linguist": "󰒓", "assistant": "󰒓", "pixeltool": "󰒓", "qdbusviewer": "󰒓"
+    },
+    "format-icons": { "empty": "" },
+    "show-special": true,
+    "all-outputs": true
+  }
+}

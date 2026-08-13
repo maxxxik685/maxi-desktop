@@ -1,0 +1,22 @@
+[window]
+opacity = 0.95
+blur = true
+
+[colors.primary]
+background = "#24283b"
+foreground = "#c0caf5"
+
+[font]
+# Точное имя шрифта из вашего списка
+normal = { family = "JetBrainsMono Nerd Font", style = "SemiBold" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "SemiBold Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+
+# Размер (ставим нормальный чёткий размер)
+size = 11.5
+
+# Небольшой вертикальный отступ для аккуратности
+[font.offset]
+x = 0
+y = 0
