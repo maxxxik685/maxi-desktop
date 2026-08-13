@@ -12,11 +12,17 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "custom/yandex",
+    "mpris",
     "group/audio",
     "group/connections",
+    "hyprland/language",
     "clock"
   ],
+  "hyprland/language": {
+    "format": " {}",
+    "format-ru": "RU",
+    "format-en": "EN"
+  },
   "custom/gpu-usage": {
     "exec": "~/.config/waybar/gpu/use.sh",
     "return-type": "json",
@@ -94,12 +100,11 @@
   "format-ethernet": "",
   "format-disconnected": "󱘖",
 },
-"custom/yandex": {
-  "exec": "playerctl metadata --format '{{title}}'",
-  "interval": 1,
-  "format": "{}",
-  "on-click": "playerctl play-pause",
-  "tooltip": false
+"mpris": {
+    "format": " {title}",
+    "format-paused": " {title}",
+    "max-length": 40,
+    "tooltip-format": false
 },
   "bluetooth": {
     "format": "󰂯",

@@ -81,10 +81,20 @@ tooltip * {
 }
 
 /* Modules */
-#clock, #distro-group, #custom-yandex, #audio, #connections, #cpu-temp, #storage, #gpu, #battery {
+#clock, #distro-group, #audio, #connections, #cpu-temp, #storage, #gpu {
   margin: 4px 5px 0px 5px;
   background-color: #24283b;
   border-radius: 20px;
+}
+
+/* Принудительные стили для language и mpris в самом низу файла */
+#language,
+#mpris {
+  margin: 4px 5px 0px 5px; 
+  padding: 6px 18px; /* Попробуйте увеличить до 18px или 20px для проверки */
+  background-color: #24283b;
+  border-radius: 20px;
+  color: #c0caf5;
 }
 
 #clock { padding: 6px 10px 6px 16px; color: #c0caf5; }
@@ -99,7 +109,7 @@ tooltip * {
 #custom-telegram { color: #229ED9; padding: 0px 15px 0px 8px; }
 
 /* Group containers */
-#audio, #connections, #custom-yandex, #cpu-temp, #storage, #gpu, #battery { 
+#audio, #connections, #mpris, #language, #cpu-temp, #storage, #gpu, #battery { 
   padding: 6px 6px; 
   color: #c0caf5; 
   background-color: #24283b;
