@@ -53,7 +53,7 @@
   
   "group/storage": {
     "orientation": "horizontal",
-    "modules": ["disk", "memory", "custom/gpu-vram", "swap"]
+    "modules": ["disk", "memory", "custom/gpu-vram"]
   },
   "group/cpu-temp": {
     "orientation": "horizontal",
@@ -70,6 +70,7 @@
       "default": ["", "", ""]
     },
     "on-click": "pavucontrol",
+    "scroll-step": 5.0,
     "tooltip": false
   },
   "pulseaudio#microphone": {
@@ -123,7 +124,8 @@
   "group/audio": {
     "orientation": "horizontal",
     "drawer": { "transition-duration": 650, "transition-left-to-right": false },
-    "modules": ["pulseaudio", "pulseaudio/slider", "pulseaudio#microphone"]
+    "modules": ["pulseaudio", "pulseaudio/slider", "pulseaudio#microphone"],
+    "scroll-step": 5.0
   },
   "group/connections": {
     "orientation": "horizontal",
@@ -144,13 +146,6 @@
     "format": "󰍛",
     "format-alt": "󰍛 <span size='11pt'>{used}</span>",
     "states": { "warning": 75, "critical": 85 } 
-  },
-  "swap": {
-    "tooltip": false,
-    "interval": 1,
-    "format": "󰓡",
-    "format-alt": "󰓡 <span size='11pt'>{used}</span>",
-    "states": { "warning": 75, "critical": 85 }
   },
   "cpu": { 
     "tooltip": false, 
