@@ -1,0 +1,7 @@
+[SddmGreeterTheme]
+Name=My Custom Theme
+Author=Your Name
+Description=Minimal custom theme
+ConfigFile=theme.conf
+Theme-Id=my-theme
+MainScript=Main.qml
