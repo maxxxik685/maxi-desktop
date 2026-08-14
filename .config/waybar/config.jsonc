@@ -9,7 +9,9 @@
     "group/gpu"
   ],
   "modules-center": [
-    "hyprland/workspaces"
+    "custom/pipetka",
+    "hyprland/workspaces",
+    "custom/screens"
   ],
   "modules-right": [
     "mpris",
@@ -18,6 +20,8 @@
     "hyprland/language",
     "clock"
   ],
+  "custom/pipetka": { "format": "󰈊", "tooltip": false, "on-click": "hyprpicker -a" },
+  "custom/screens": { "format": "󰹑", "tooltip": false, "on-click": "~/Skripts/screenshots" },
   "hyprland/language": {
     "format": " {}",
     "format-ru": "RU",
@@ -52,8 +56,8 @@
   "group/gpu": {
     "orientation": "horizontal",
     "modules": [
-      "custom/gpu-usage",
-      "custom/gpu-temp"
+      "custom/gpu-temp",
+      "custom/gpu-usage"
     ]
   },
   

@@ -89,6 +89,8 @@ tooltip * {
 
 /* Принудительные стили для language и mpris в самом низу файла */
 #language,
+#custom-pipetka,
+#custom-screens,
 #mpris {
   margin: 4px 5px 0px 5px; 
   padding: 6px 18px; /* Попробуйте увеличить до 18px или 20px для проверки */
@@ -98,7 +100,7 @@ tooltip * {
 }
 
 #clock { padding: 6px 10px 6px 16px; color: #c0caf5; }
-
+#custom-pipetka, #custom-screens { padding: 0px 19px 0px 15px; color: #c0caf5; }
 /* Custom Colors & Spacings */
 #custom-distro { color: #B9A8F5; padding: 6px 15px 6px 11px; }
 #custom-terminal { color: #a6e3a1; padding: 0px 10px; }
@@ -109,7 +111,7 @@ tooltip * {
 #custom-telegram { color: #229ED9; padding: 0px 15px 0px 8px; }
 
 /* Group containers */
-#audio, #connections, #mpris, #language, #cpu-temp, #storage, #gpu, #battery { 
+#audio, #connections, #mpris, #language, #cpu-temp, #storage, #gpu  { 
   padding: 6px 6px; 
   color: #c0caf5; 
   background-color: #24283b;
@@ -125,10 +127,6 @@ tooltip * {
 
 #network { 
   padding: 0px 10px 0px 4px;
-  background-color: #24283b;
-}
-
-#battery {
   background-color: #24283b;
 }
 
